@@ -9,9 +9,10 @@ namespace FizzBuzz
         {
             var rules = new List<IRule>()
             {
-                new ThreeRule(),
-                new FiveRule(),
-                new SevenRule(),
+                new DivisibleRule(3, "Fizz"),
+                new DivisibleRule(5, "Buzz"),
+                new DivisibleRule(7, "Bang"),
+                new OverwriteRule(11, "Bong"),
             };
 
             var fizzBuzzer = new FizzBuzzer(rules);
