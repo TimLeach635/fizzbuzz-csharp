@@ -11,11 +11,12 @@ namespace FizzBuzz
             {
                 new ThreeRule(),
                 new FiveRule(),
+                new SevenRule(),
             };
 
             var fizzBuzzer = new FizzBuzzer(rules);
 
-            for (int i = 1; i <= 100; i++)
+            for (int i = 1; i <= 110; i++)
             {
                 Console.WriteLine(fizzBuzzer.FizzBuzz(i));
             }
