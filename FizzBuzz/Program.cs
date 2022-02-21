@@ -13,6 +13,7 @@ namespace FizzBuzz
                 new DivisibleRule(5, "Buzz"),
                 new DivisibleRule(7, "Bang"),
                 new OverwriteRule(11, "Bong"),
+                new ReverseRule(17),
             };
 
             var fizzBuzzer = new FizzBuzzer(rules);
